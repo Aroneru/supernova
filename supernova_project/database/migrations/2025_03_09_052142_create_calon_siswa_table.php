@@ -23,7 +23,7 @@ return new class extends Migration {
             $table->string('nama_ibu');
             $table->string('pekerjaan_ibu');
             $table->string('hp_ibu');
-            $table->string('status_pendaftaran')->nullable();
+            $table->string('status_pendaftaran')->default('Menunggu')->nullable();
             $table->string('status_pembayaran')->nullable();
             $table->timestamps();
         });
