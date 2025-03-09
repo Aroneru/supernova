@@ -1,4 +1,4 @@
-# supernova
+# SUPERNOVA
 
 ## Project Kelompok 7 Mata Kuliah Sistem Informasi
 
