@@ -14,7 +14,7 @@ class SiswaFactory extends Factory
     {
         return [
             'kelas_id' => $this->faker->numberBetween(1, 3),
-            'calon_siswa_id' => \App\Models\CalonSiswa::where('status_pendaftaran', 'lulus')->inRandomOrder()->first()->id,
+            'calon_siswa_id' => null
         ];
     }
 }

@@ -13,7 +13,7 @@ class CalonSiswaFactory extends Factory
     {
         return [
             'nama_lengkap' => $this->faker->name,
-            'tanggal_lahir' => $this->faker->date,
+            'tanggal_lahir' => $this->faker->dateTimeBetween('-8 years', 'now')->format('Y-m-d'),
             'tempat_lahir' => $this->faker->city,
             'usia' => $this->faker->numberBetween(4, 7),
             'jenis_kelamin' => $this->faker->randomElement(['Laki-laki', 'Perempuan']),
