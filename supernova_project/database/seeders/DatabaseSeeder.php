@@ -17,7 +17,15 @@ class DatabaseSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Test User',
-            'email' => 'test@example.com',
+            'email' => 'test' . time() . '@example.com', // Use a unique email address
+        ]);
+
+        $this->call([
+            KelasSeeder::class,
+            CalonSiswaSeeder::class,
+            // SiswaSeeder::class,
+            GuruSeeder::class,
+            AdminSekolahSeeder::class,
         ]);
     }
 }

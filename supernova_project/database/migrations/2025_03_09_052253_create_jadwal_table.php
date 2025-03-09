@@ -14,7 +14,7 @@ return new class extends Migration {
             $table->time('waktu_mulai');
             $table->time('waktu_selesai');
             $table->string('image')->nullable();
-            $table->foreignId('id_pembuat')->constrained('admin_sekolah')->onDelete('cascade');
+            $table->morphs('pembuat'); // Menyimpan id dan tipe (guru atau admin_sekolah) - gak pake foreign key
             $table->timestamps();
         });
     }
@@ -23,4 +23,5 @@ return new class extends Migration {
         Schema::dropIfExists('jadwal');
     }
 };
+
 

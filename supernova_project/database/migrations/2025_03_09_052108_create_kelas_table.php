@@ -9,6 +9,8 @@ return new class extends Migration {
         Schema::create('kelas', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('deskripsi');
+            $table->string('tingkat');
             $table->timestamps();
         });
     }

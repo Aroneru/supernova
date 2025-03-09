@@ -17,6 +17,14 @@ return new class extends Migration {
             $table->string('status_keluarga');
             $table->text('alamat');
             $table->text('riwayat_penyakit')->nullable();
+            $table->string('nama_ayah');
+            $table->string('pekerjaan_ayah');
+            $table->string('hp_ayah');
+            $table->string('nama_ibu');
+            $table->string('pekerjaan_ibu');
+            $table->string('hp_ibu');
+            $table->string('status_pendaftaran')->nullable();
+            $table->string('status_pembayaran')->nullable();
             $table->timestamps();
         });
     }
