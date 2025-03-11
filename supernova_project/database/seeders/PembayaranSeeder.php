@@ -2,17 +2,17 @@
 
 namespace Database\Seeders;
 
-use App\Models\CalonSiswa;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Pembayaran;
 
-class CalonSiswaSeeder extends Seeder
+class PembayaranSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        CalonSiswa::factory(count: 25)->create();
+        Pembayaran::factory()->count(25)->create();
     }
 }

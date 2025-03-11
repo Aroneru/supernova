@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
             GuruSeeder::class,
             AdminSekolahSeeder::class,
             NilaiSeeder::class,
+            PembayaranSeeder::class,
         ]);
     }
 }
