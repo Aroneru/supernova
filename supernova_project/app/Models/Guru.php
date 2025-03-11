@@ -26,9 +26,8 @@ class Guru extends Model {
         return $this->morphMany(Jadwal::class, 'pembuat');
     }
 
-    // public function nilais()
-    // {
-    //     return $this->hasMany(Nilai::class, 'id_siswa');
-    // }
+    public function nilais() {
+        return $this->hasMany(Nilai::class, 'guru_id');
+    }
 }
 
