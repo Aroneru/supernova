@@ -13,6 +13,8 @@ class Kelas extends Model
         'nama',
         'deskripsi',
         'tingkat',
+        'tahun_ajar',
+        'status'
     ];
 
     public function guru()

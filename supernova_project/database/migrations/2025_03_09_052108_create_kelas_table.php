@@ -11,6 +11,8 @@ return new class extends Migration {
             $table->string('nama');
             $table->string('deskripsi');
             $table->string('tingkat');
+            $table->string('tahun_ajar');
+            $table->enum('status', ['aktif', 'non-aktif'])->default('aktif');
             $table->timestamps();
         });
     }

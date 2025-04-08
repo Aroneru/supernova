@@ -16,6 +16,8 @@ class KelasFactory extends Factory
             'nama' => $this->faker->word,
             'deskripsi' => $this->faker->sentence,
             'tingkat' => $this->faker->numberBetween(1, 4),
+            'tahun_ajar' => $this->faker->year,
+            'status' => $this->faker->randomElement(['aktif', 'non-aktif']),
             'created_at' => now(),
             'updated_at' => now(),
         ];
